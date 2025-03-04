@@ -26,7 +26,8 @@ btn.addEventListener("click", (ev) => {
 
     if (numberValue < 1 || numberValue > 100) {
         pista.innerHTML = "El número debe estar entre 1 y 100"
-    } else {
+    } 
+    else {
         if (numberValue > randomNumber) {
             pista.classList.remove("pista");
             pista.classList.add("orange");
@@ -35,7 +36,9 @@ btn.addEventListener("click", (ev) => {
             pista.classList.remove("pista");
             pista.classList.add("orange");
             pista.innerHTML = "Ojito cuidao! que el número es Demasiado bajo"
-        } else {
+        }
+
+         else {
             pista.classList.remove("pista");
             pista.classList.add("green");
             pista.innerHTML = "Oleeeeeee!!! Has ganado campeona!!!"}
