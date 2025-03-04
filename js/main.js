@@ -28,10 +28,17 @@ btn.addEventListener("click", (ev) => {
         pista.innerHTML = "El número debe estar entre 1 y 100"
     } else {
         if (numberValue > randomNumber) {
-            pista.innerHTML = "Demasiado alto"
+            pista.classList.remove("pista");
+            pista.classList.add("orange");
+            pista.innerHTML = "Ojito cuidao! que el número es Demasiado alto"
         } else if (numberValue < randomNumber) {
-            pista.innerHTML = "Demasiado bajo"
-        } else {pista.innerHTML = "Has ganado campeona!"}
+            pista.classList.remove("pista");
+            pista.classList.add("orange");
+            pista.innerHTML = "Ojito cuidao! que el número es Demasiado bajo"
+        } else {
+            pista.classList.remove("pista");
+            pista.classList.add("green");
+            pista.innerHTML = "Oleeeeeee!!! Has ganado campeona!!!"}
     }    
     
     tries.innerHTML = `Número de intentos: ${contador}`;
