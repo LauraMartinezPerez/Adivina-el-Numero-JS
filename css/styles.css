@@ -1,0 +1,54 @@
+*{
+    font-family: arial;
+}
+.container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.instructions {
+    margin: 10px 0;
+}
+
+.form-style {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.input-number {
+    width: 240px;
+    padding: 10px 0;
+
+}
+.btn {
+    width: 150px;
+    padding: 7px 0;
+    background-color:darkcyan;
+    color: white;
+    font-size: 20px;
+    border-radius: 50px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    gap: 20px;
+    margin: 15px 0;
+    
+}
+
+.pista {
+    border: 2px solid grey;
+    color: lightslategrey;
+    padding: 10px;
+}
+.tries {
+    border: 2px solid grey;
+    color: lightslategrey;
+    padding: 10px;
+}
