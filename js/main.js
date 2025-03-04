@@ -16,15 +16,15 @@ const randomNumber = getRandomInt(100);
 console.log(randomNumber)
 
 
-btn.addEventListener("click", (ev) => {
+const handleClick = (ev) => {
     ev.preventDefault();
-    const numberValue = inputNumber.value
+    const numberValue = parseInt(inputNumber.value);
     
     console.log(numberValue);
 
    contador = contador + 1;
 
-    if (numberValue < 1 || numberValue > 100) {
+    if (numberValue < 1 || numberValue > 100 || !numberValue) {
         pista.innerHTML = "El número debe estar entre 1 y 100"
     } 
     else {
@@ -38,7 +38,7 @@ btn.addEventListener("click", (ev) => {
             pista.innerHTML = "Ojito cuidao! que el número es Demasiado bajo"
         }
 
-         else {
+         else if(numberValue === randomNumber) {
             pista.classList.remove("pista");
             pista.classList.add("green");
             pista.innerHTML = "Oleeeeeee!!! Has ganado campeona!!!"}
@@ -46,7 +46,7 @@ btn.addEventListener("click", (ev) => {
     
     tries.innerHTML = `Número de intentos: ${contador}`;
     
-})
+}
 
-
+btn.addEventListener("click", handleClick);
  
