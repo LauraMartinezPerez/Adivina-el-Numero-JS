@@ -18,4 +18,4 @@
 
 ## 🚀 Demo
 
-Puedes probar el juego en vivo aquí: [https://lauramartinezperez.github.io/Adivina-el-Numero-JS/](Adivina el Número)
+Puedes probar el juego en vivo aquí: https://lauramartinezperez.github.io/Adivina-el-Numero-JS/
